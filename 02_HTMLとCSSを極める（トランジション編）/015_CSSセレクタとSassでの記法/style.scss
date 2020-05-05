@@ -1,0 +1,29 @@
+.parent {
+  color: blue;
+
+  // >をつけることで子要素のみのelementに適用できる
+  & > .element {
+    color: purple;
+
+    &.second-child {
+      color: black;
+    }
+  }
+}
+
+.element {
+  color: red;
+}
+
+// .child {
+//   color: purple;
+// }
+
+// 二番目の要素のみ黒にしたい場合は？
+// 一般的にはクラスにsecond-childとかいれる
+// が反映されない
+// なぜがというと詳細度が低いから
+// なのでもし指定するのであれば、上に記載する必要がある
+.second-child {
+  color: black;
+}

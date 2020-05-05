@@ -18,6 +18,7 @@ $cBlack: black;
     background-color: $cBlack;
     color: $cWhite;
   }
+  /*文字列の結合ができる.htmlではbtn-cubeというクラスになっている*/
   &-cube {
     background-color: $cBlack;
     & .inner {

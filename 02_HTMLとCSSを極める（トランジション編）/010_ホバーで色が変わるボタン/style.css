@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*サースは変数とブロックを入れ子にできる*/
+/*色の変数*/
 #container {
   text-align: center;
 }
@@ -12,6 +15,8 @@
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  /*ネストの書き方、&は省略できるときと省略できないときがある*/
+  /*以下は省略できない。cssで.btnと:hoverの間に半角スペースを入れないから*/
 }
 
 .btn:hover {
