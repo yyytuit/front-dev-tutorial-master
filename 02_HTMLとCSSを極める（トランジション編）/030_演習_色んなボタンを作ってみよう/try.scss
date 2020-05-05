@@ -35,7 +35,7 @@ $cBlack: black;
 
     &.letter-spacing:hover {
       background-color: $cBlack;
-      // 横にビヨーンと伸ばすアクション
+      // 横にビヨーンと文字の間隔を広げるすアクション
       letter-spacing: 3px;
       color: $cWhite;
     }

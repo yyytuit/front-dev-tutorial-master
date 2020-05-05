@@ -1,8 +1,29 @@
 .rect {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-color: orangered;
-    transform: translateX(50px) scaleY(2);
-    transform-origin: center center;
+  width: 100px;
+  height: 100px;
+  // ブロック要素に対して中央揃え。ちなみにmarginの 0 aoutを設定するにはwidthを設定しなければならない
+  margin: 0 auto;
+  background-color: orangered;
+  //1 translateは第一引数にx軸方向、第二引数にy軸方向に移動させる
+  //   transform: translate(50px, 50px);
+
+  //2 x軸方向だけ指定したい場合はtranslateXとする
+  //   transform: translateX(100%);
+
+  //3 rltate 物体を傾ける。下は右に30度回転
+  //   transform: rotate(30deg);
+  //4 3に加えて、さらにoriginを指定することで、
+  // 下のようにtop leftとすることで、左上を支点に30度回転させることができる
+  //   transform-origin: top left;
+
+  transform-origin: center center;
+  // 4 平行四辺形を定義するときに使用する
+  //   transform: skew(30deg);
+
+  //5 scaleはx軸に数値を入れるとその倍数大きくなる
+  //   transform: scale(2, 3);
+  //   transform-origin: center center;
+
+  // アニメーションの位置の移動をさせる場合などはなるべくtransformを使う。top: left;などは使わない
+  transform: translateX(50px) scaleY(2);
 }
